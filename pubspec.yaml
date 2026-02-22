@@ -1,0 +1,50 @@
+name: blindassist
+description: "BlindAssist - Mobile app for blind users to recognize Moroccan currency."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  camera: ^0.11.3
+  flutter_tts: ^4.2.3
+
+  # UPDATED: use a newer tflite_flutter
+  tflite_flutter: ^0.12.1
+
+  # NEW: pick image from camera
+  image_picker: ^1.1.2
+
+  # NEW: resize / process image pixels
+  image: ^4.2.0
+
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_launcher_icons: ^ 0.13.1
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+
+  image_path_ios: "assets/logo/app_logo.png" # can keep the old one for iOS
+  image_path_android: "assets/logo/app_logo.png"
+  adaptive_icon_foreground: "assets/logo/app_logo.png"
+  adaptive_icon_background: "#0A84FF" # or any aqua background color you like
+
+  min_sdk_android: 21
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/currency.tflite
+    - assets/logo/app_logo.png
