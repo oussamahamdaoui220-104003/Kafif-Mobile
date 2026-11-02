@@ -1,7 +1,5 @@
 # Kafif Mobile
 
-![Kafif Mobile screenshot](flutter_01.png)
-
 An offline Flutter app that helps blind and visually impaired people identify Moroccan coins and banknotes. The user points the phone at a coin or note, and the app announces the denomination out loud ("Twenty dirhams").
 
 Kafif Mobile is half of **Kafif**, my capstone project at Al Akhawayn University (supervised by Dr. Yousra Chtouki). The other half is a Chrome extension for accessible web reading and multilingual summaries.
